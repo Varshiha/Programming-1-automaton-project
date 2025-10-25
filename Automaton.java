@@ -53,7 +53,7 @@ public class Automaton
         for(int i = 0; i < state.length; i++) {
             int left, center, right;
             if(i == 0) {
-                left = 0;
+                left = 0;//we have to set it
             }
             else {
                 left = state[i - 1];
@@ -75,8 +75,11 @@ public class Automaton
      */
     public void reset()
     {
-        Arrays.fill(state, 0);
+        Arrays.fill(state, 0);//sets every cell to 0
         // Seed the automaton with a single 'on' cell.
-        state[numberOfCells / 2] = 1;
+        state[numberOfCells / 2] = 1; //middle cell to 0
+        state[numberOfCells / 2 - 1] = 1; //left cell to 1
+        state[numberOfCells / 2 + 1] = 1;//right cell to 1
     }
+
 }
