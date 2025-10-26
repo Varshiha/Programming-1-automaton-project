@@ -15,3 +15,5 @@ Questions - Lab 7:
 29. Yes, the different patterns emerge this time because the starting states are different. The patterns are deterministics because it follows the same code when it updates. So the only thing thats different is that it starts with 3 when we rest but continues the same way.
 31. We created a new array so that all cells are calculated from the previous state. If we keep the same array I think what it does is that when cells are being calculated it, it will use already updated cells instead of the originals ones.
 32. In my opinion, a complete array was better because I thought it was simpler to understand. I felt like the solution I did felt more complicated and had more steps.
+35. Since there are 8 possible combinations for the input and two possible numbers for each cell(0 or 1) and each cells next state is dependant on three things (left. center, right), it means that it will be 2 X 2 x 2 = 8 and the result can be 0 or 1 then it will be 2 exposant 8 gives 256 possibilities.
+
